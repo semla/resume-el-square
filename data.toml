@@ -1,0 +1,59 @@
+# your information
+[sender]
+company_name = "JD"
+personal_name = "John Doe"
+address = '''
+132, My Street
+Bigtown BG23 4YZ
+England
+'''
+phone="+358555555"
+email="jd@example.com"
+
+[links]
+developer_link_heading="Developer profiles"
+developer_links = [
+  { name = "github.com/semla", url = "https://github.com/semla" },
+  { name = "gitlab.com/semla", url = "https://gitlab.com/semla" },
+]
+social_link_heading="Social profiles"
+social_links = [
+  { name = "Mastodon", url = "https://example.com" }
+]
+project_link_heading="Projects"
+project_links = [
+  { name = "My first project", url = "https://example.com" },
+  { name = "Another project", url = "https://example.com" },
+]
+
+[first_paragraph]
+title="Summary"
+body_text='''
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum
+corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum
+impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut.
+'''
+
+[second_paragraph]
+title="Experience"
+body_text='''
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum
+corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum
+impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut.
+'''
+
+[third_paragraph]
+title="Certifications"
+body_text='''
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum
+corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum
+impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut.
+'''
+
+[ending_statement]
+body_text='''
+Un âne ne pète pas toujours au même ton!
+'''
