@@ -1,20 +1,26 @@
 #let static_data = toml("data.toml")
 
+#show link: set text(fill: blue)
+#show link: underline
+
+#set text(fill: rgb("#3e1f0f"))
+
 #set page(
-  margin: (top: 7cm, bottom: 5cm),
+  fill: rgb("#fffdf6"),
+  margin: (top: 8cm, bottom: 5cm),
   header: [
-    #rect(fill: luma(245),width: 100%, height: 100%, outset: (x:3cm, y:5mm))[
-      #text(font: "Libre Baskerville")[
+    #rect(fill: rgb("#ecf7fc"), width: 100%, height: 100%, outset: (x:3cm, y:5mm))[
+      #text(font: "Libre Baskerville", fill: rgb("#622303"))[
         = #static_data.sender.personal_name
         Programmer
       ]
   ]
-  #rect(fill:luma(220), width: auto, height: 2em)[
-      *#static_data.sender.email*, #static_data.sender.phone
+  #rect(fill:luma(238), width: auto, height: 2em)[
+      #link("mailto:" + static_data.sender.email)[#static_data.sender.email], #static_data.sender.phone
   ]
   ],
   footer: [
-    #align(right, block(fill: luma(245), inset: 2em, outset: (right:7em, bottom:1em))[
+    #align(right, block(fill:rgb("#ecf7fc"), inset: 2em, outset: (right:7em, bottom:1em))[
     #set align(left)
     #static_data.sender.personal_name \
     #static_data.sender.address
