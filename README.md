@@ -1,5 +1,5 @@
 # Resume
-Simple resume written in (https://github.com/typst/typst)[Typst].
+Simple resume written in [Typst](https://github.com/typst/typst).
 ## Data
 The resume reads from data.toml
 
@@ -8,8 +8,8 @@ Create pdf with:\
 `typst compile main.typ`
 
 #### fonts
-(https://fonts.google.com/specimen/Libre+Baskerville)[Libre Baskerville]
-(https://fonts.google.com/specimen/Vollkorn)[Vollkorn]
+[Libre Baskerville](https://fonts.google.com/specimen/Libre+Baskerville)
+[Vollkorn](https://fonts.google.com/specimen/Vollkorn)
 
 ### Preview
 
