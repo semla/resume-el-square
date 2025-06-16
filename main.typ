@@ -15,8 +15,8 @@
         Programmer
       ]
   ]
-  #rect(fill:luma(238), width: auto, height: 2em)[
-      #link("mailto:" + static_data.sender.email)[#static_data.sender.email], #static_data.sender.phone
+  #rect( width: auto, height: 2em, fill: (rgb("#ecf7fc")), outset: (x:2mm,y:2mm))[
+      #link("mailto:" + static_data.sender.email)[#strong[#static_data.sender.email]], #static_data.sender.phone
   ]
   ],
   footer: [
