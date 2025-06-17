@@ -12,7 +12,7 @@
     #rect(fill: rgb("#ecf7fc"), width: 100%, height: 100%, outset: (x:3cm, y:5mm))[
       #text(font: "Libre Baskerville", fill: rgb("#622303"))[
         = #static_data.sender.personal_name
-        Programmer
+        == #static_data.sender.subtitle
       ]
   ]
   #rect( width: auto, height: 2em, fill: (rgb("#ecf7fc")), outset: (x:2mm,y:2mm))[
@@ -32,15 +32,15 @@
 == Links
 #v(3mm)
 #columns(3)[
-=== #static_data.links.developer_link_heading
-#v(2mm)
-#for item in static_data.links.developer_links {
-  list(link(item.url)[#item.name])
-}
-#colbreak()
 === #static_data.links.project_link_heading
 #v(2mm)
 #for item in static_data.links.project_links {
+  list(link(item.url)[#item.name] + linebreak() + item.comment)
+}
+#colbreak()
+=== #static_data.links.developer_link_heading
+#v(2mm)
+#for item in static_data.links.developer_links {
   list(link(item.url)[#item.name])
 }
 #colbreak()
@@ -50,7 +50,7 @@
   list(link(item.url)[#item.name])
 }
 ]
-#v(3em)
+#v(1em)
 == #static_data.first_paragraph.title
 #static_data.first_paragraph.body_text
 == #static_data.second_paragraph.title
@@ -58,5 +58,5 @@
 == #static_data.third_paragraph.title
 #static_data.third_paragraph.body_text
 
-#v(3em)
+#v(1em)
 #text(2em)[#emph[#static_data.ending_statement.body_text]]
